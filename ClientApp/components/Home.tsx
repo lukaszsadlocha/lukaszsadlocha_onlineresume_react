@@ -240,7 +240,7 @@ export class Home extends React.Component {
                         <h5>TECHNOLOGIES</h5>
                     </div>
                     <div className="col-lg-5">
-                        <p><img className="img-responsive" src="~/images/sitecore_big.png" alt="" /></p>
+                        <p><img className="img-responsive" src={require("../images/sitecore_big.png")} alt="" /></p>
                     </div>
                     <div className="col-lg-4">
                         <p>
@@ -252,7 +252,7 @@ export class Home extends React.Component {
                     </div>
 
                     <div className="col-lg-5 col-lg-offset-3">
-                        <p><img className="img-responsive" src="~/images/sharePoint.jpg" alt="" /></p>
+                        <p><img className="img-responsive" src={require("../images/sharePoint.jpg")} alt="" /></p>
                     </div>
                     <div className="col-lg-4">
                         <p>
@@ -265,7 +265,7 @@ export class Home extends React.Component {
                     </div>
 
                     <div className="col-lg-5 col-lg-offset-3">
-                        <p><img className="img-responsive" src="~/images/other.png" alt=""/></p>
+                        <p><img className="img-responsive" src={require("../images/other.png")} alt=""/></p>
             </div>
                         <div className="col-lg-4">
                             <p>
