@@ -1,4 +1,5 @@
 ﻿import * as React from 'react';
+import { TechnologyBlock } from './TechnologyBlock';
 
 export class Home extends React.Component {
     public render() {
@@ -239,81 +240,54 @@ export class Home extends React.Component {
                     <div className="col-lg-2 col-lg-offset-1">
                         <h5>TECHNOLOGIES</h5>
                     </div>
-                    <div className="col-lg-5">
-                        <p><img className="img-responsive" src={require("../images/sitecore_big.png")} alt="" /></p>
-                    </div>
-                    <div className="col-lg-4">
-                        <p>
-                            SITECORE
-                    <br />
-                            Sitecore.
-                    I've been connected with Sitecore platform since November 2016 and I really enjoy how the system is built and that there are plenty ways of extending it. I was responsible for developing new features in two Sitecore projects that hosted customer faced web pages with a load of 1000 per second requests in peak periods. I lead upgrade from Sitecore 7.2 to Sitecore 8.1 for multipage instance, I have a role of technical expert and advisor for moving Sitecore instances to Microsoft Azure (IaaS model), Configure advanced CI/CD pipeline using VSTS and introduced Apache Lucene index into reporting pages<br />
-                        </p>
-                    </div>
+                </div>
+                <div className="row">
 
-                    <div className="col-lg-5 col-lg-offset-3">
-                        <p><img className="img-responsive" src={require("../images/sharePoint.jpg")} alt="" /></p>
-                    </div>
-                    <div className="col-lg-4">
-                        <p>
-                            SHAREPOINT
-                    <br />
-                            I worked with SharePoint 2007, 2010, 2013 and Online fulfilling various business requirements; starting from OOTB SharePoint configuration to deliver simple intranet systems, going through big Farm solutions placed directly on the server, many small workflow instances that were achieved by extending SharePoint forms and adding many JS code, ending on modern apps in provided-hosted model deployed in Microsoft Azure.
-                            I found the last model as my favorite way of developing systems on SharePoint. Testing/CI/CD/Scalability is simply achievable and there is a plenty of ASP.NET features that can be used.
-                    <br />
-                        </p>
-                    </div>
+                    <TechnologyBlock header="SITECORE" image={require("../images/sitecore_big.png")} text="I've been connected with Sitecore platform since November 2016 and I really enjoy how the system is built and that there are plenty ways of extending it. I was responsible for developing new features in two Sitecore projects that hosted customer faced web pages with a load of 1000 per second requests in peak periods. I lead upgrade from Sitecore 7.2 to Sitecore 8.1 for multipage instance, I have a role of technical expert and advisor for moving Sitecore instances to Microsoft Azure (IaaS model), Configure advanced CI/CD pipeline using VSTS and introduced Apache Lucene index into reporting pages" /> 
+                    <TechnologyBlock header="SHAREPOINT" image={require("../images/sharePoint.jpg")} text="I worked with SharePoint 2007, 2010, 2013 and Online fulfilling various business requirements; starting from OOTB SharePoint configuration to deliver simple intranet systems, going through big Farm solutions placed directly on the server, many small workflow instances that were achieved by extending SharePoint forms and adding many JS code, ending on modern apps in provided-hosted model deployed in Microsoft Azure. I found the last model as my favorite way of developing systems on SharePoint. Testing/CI/CD/Scalability is simply achievable and there is a plenty of ASP.NET features that can be used." /> 
+                    <TechnologyBlock header="OTHER TECHNOLOGIES" image={require("../images/other.png")} text="As a big enthusiast of new technologies, I appreciate that many services are provided by Microsoft for learning or small projects. Recently I am focused on process automation. I remember that couple years ago I was struggling with searching for Windows hosting, generating packages for deployment with compiled code, styles, Typescript files and so on. Then I found gulp which helped me a lot. Currently, I use VSTS and keep my projects on Azure still looking at courses on Pluralsight/MVA to find more effective ways of my work." />
 
-                    <div className="col-lg-5 col-lg-offset-3">
-                        <p><img className="img-responsive" src={require("../images/other.png")} alt=""/></p>
+                </div>
+                <br />
+                <br />
             </div>
-                        <div className="col-lg-4">
+
+            <section id="forRecruiters" name="forRecruiters"></section>
+            <section id="contact" name="contact"></section>
+
+
+            <div id="footwrap">
+                <div className="container">
+                    <div className="row">
+
+                        <div className="col-lg-2 col-lg-offset-1">
+                            <h5>CONTACT</h5>
+                        </div>
+                        <div className="col-lg-5">
                             <p>
-                                Private projects<br />
-                                As a big enthusiast of new technologies, I appreciate that many services are provided by Microsoft for learning or small projects. Recently I am focused on process automation. I remember that couple years ago I was struggling with searching for Windows hosting, generating packages for deployment with compiled code, styles, Typescript files and so on. Then I found gulp which helped me a lot. Currently, I use VSTS and keep my projects on Azure still looking at courses on Pluralsight/MVA to find more effective ways of my work.</p>
+                                <i className="fa fa-envelope" aria-hidden="true"></i><span>Email</span><br />
+                                <a href="mailto:lukaszsadlocha@gmail.com"> lukaszsadlocha@gmail.com</a><br />
+                            </p>
+                            <p>
+                                <i className="fa fa-link" aria-hidden="true"></i><span>Webpage</span><br />
+                                <a href="http://lukaszsadlocha.pl/">lukaszsadlocha.pl</a> <br />
+                            </p>
+                            <p>
+                                <i className="fa fa-phone" aria-hidden="true"></i><span>Phone</span><br />
+                                +48 509 509 917 <br />
+                            </p>
                         </div>
-
-                    </div>
-                    <br />
-                    <br />
-                </div>
-
-                <section id="forRecruiters" name="forRecruiters"></section>
-                <section id="contact" name="contact"></section>
-
-
-                <div id="footwrap">
-                    <div className="container">
-                        <div className="row">
-
-                            <div className="col-lg-2 col-lg-offset-1">
-                                <h5>CONTACT</h5>
-                            </div>
-                            <div className="col-lg-5">
-                                <p>
-                                    <i className="fa fa-envelope" aria-hidden="true"></i><span>Email</span><br />
-                                    <a href="mailto:lukaszsadlocha@gmail.com"> lukaszsadlocha@gmail.com</a><br />
-                                </p>
-                                <p>
-                                    <i className="fa fa-link" aria-hidden="true"></i><span>Webpage</span><br />
-                                    <a href="http://lukaszsadlocha.pl/">lukaszsadlocha.pl</a> <br />
-                                </p>
-                                <p>
-                                    <i className="fa fa-phone" aria-hidden="true"></i><span>Phone</span><br />
-                                    +48 509 509 917 <br />
-                                </p>
-                            </div>
-                            <div className="col-lg-2">
-                                <p>SOCIAL LINKS</p>
-                                <ul>
-                                    <li><a href="https://github.com/lukaszsadlocha/"><i className="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
-                                    <li><a href="https://www.facebook.com/profile.php?id=100001637353241"><i className="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
-                                    <li><a href="https://www.linkedin.com/in/%C5%82ukasz-sadlocha-33b63495/"><i className="fa fa-linkedin" aria-hidden="true"></i>LinkendIn</a></li>
-                                </ul>
-                            </div>
+                        <div className="col-lg-2">
+                            <p>SOCIAL LINKS</p>
+                            <ul>
+                                <li><a href="https://github.com/lukaszsadlocha/"><i className="fa fa-github" aria-hidden="true"></i> GitHub</a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100001637353241"><i className="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                                <li><a href="https://www.linkedin.com/in/%C5%82ukasz-sadlocha-33b63495/"><i className="fa fa-linkedin" aria-hidden="true"></i>LinkendIn</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            }
-        }
+        </div>
+    }
+}
